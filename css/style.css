@@ -390,8 +390,10 @@ header {
 }
 
 .portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio__item {
@@ -469,7 +471,7 @@ header {
     display: grid;
     padding: 0 2em 2em;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
 .portfolio-item-individual p {
@@ -479,7 +481,20 @@ header {
 }
 
 .portfolio-heading{
-    margin-bottom: 1em;
+    padding: 10px;
+    margin-bottom: 0.5em;
     color: var(--clr-accent);
 
 }
+
+.portfolio-heading{
+    padding: 10px;
+    margin-bottom: 0.5em;
+    color: var(--clr-accent);
+
+}
+/* 
+.webcontainer{
+display: flex;
+flex-direction: column;
+justify-content: center;} */
